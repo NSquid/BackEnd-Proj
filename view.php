@@ -78,7 +78,7 @@ $conn->close();
     </div>
     <div class="form-fields">
         <label for="photo">Photo:</label><br>
-        <img id="photo" src='uploads/<?php echo $user['photo']; ?>' width='100'><br><br>
+        <img id="photo" src='images/<?php echo $user['photo']; ?>' width='100'><br><br>
         <label for="firstName">First Name:</label><br>
         <input type="text" id="firstName" name="firstName" value="<?php echo isset($user['firstName']) ? $user['firstName'] : ''; ?>" disabled><br>
         <label for="lastName">Last Name:</label><br>

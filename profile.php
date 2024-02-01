@@ -87,7 +87,7 @@ $conn->close();
     <div class="form-fields">
         <label>Photo:</label>
         <div class="detail-box">
-            <img src='uploads/<?php echo $user['photo']; ?>' width='100'>
+            <img src='images/<?php echo $user['photo']; ?>' width='100'>
         </div>
         <label>Full Name:</label>
         <div class="detail-box">

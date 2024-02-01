@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $extension = pathinfo($originalName, PATHINFO_EXTENSION);
             $newName = uniqid() . '.' . $extension;
             $photo = $newName;
-            $upload_dir = 'uploads/'; 
+            $upload_dir = 'images/'; 
             if (move_uploaded_file($_FILES['image']['tmp_name'], $upload_dir.$photo)) {
                 echo "File uploaded successfully.";
             } else {

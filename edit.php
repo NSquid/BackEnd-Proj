@@ -125,7 +125,7 @@ $conn->close();
     <div class="form-fields">
     <form method="POST" enctype="multipart/form-data">
         <label for="photo">Photo:</label><br>
-        <img src='uploads/<?php echo $user['photo']; ?>' width='100'><br><br>
+        <img src='images/<?php echo $user['photo']; ?>' width='100'><br><br><br>
         <input type="file" id="photo" name="photo"><br><br>
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" value="<?php echo isset($user['firstName']) ? $user['firstName'] : ''; ?>" required>

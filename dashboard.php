@@ -64,7 +64,7 @@ if ($result->num_rows > 0) {
     echo "<tbody>";
     while($row = $result->fetch_assoc()) {
         echo "<tr><td>".$row["id"]."</td>";
-        echo "<td><img src='uploads/" . $row["photo"]. "' width='100'></td>";
+        echo "<td><img src='images/" . $row["photo"]. "' width='100'></td>";
         echo "<td>".$row["fullname"]."</td><td>".$row["email"]."</td>";
         echo "<td><a href='View.php?id=".$row["id"]."' class='btn btn-success'>View</a> <a href='edit.php?id=".$row["id"]."' class='btn btn-primary'>Edit</a> <a href='delete.php?id=".$row["id"]."' class='btn btn-danger'>Delete</a></td></tr>";
     }
